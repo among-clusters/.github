@@ -1,0 +1,25 @@
+name: Maintenance review
+description: Record a bounded, evidence-backed maintenance review
+title: "[maintenance] "
+labels: ["type/maintenance", "status/triage", "roadmap/public", "track/reliability"]
+body:
+  - type: dropdown
+    id: cadence
+    attributes: {label: Cadence, options: [Weekly, Monthly, Quarterly, Release-bound]}
+    validations: {required: true}
+  - type: textarea
+    id: scope
+    attributes: {label: Review scope}
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes: {label: Redacted evidence links}
+    validations: {required: true}
+  - type: textarea
+    id: actions
+    attributes: {label: Follow-up actions}
+    validations: {required: true}
+  - type: textarea
+    id: acceptance
+    attributes: {label: Completion criteria}
+    validations: {required: true}

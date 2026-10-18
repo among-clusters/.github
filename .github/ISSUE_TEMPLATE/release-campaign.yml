@@ -1,0 +1,29 @@
+name: Release campaign
+description: Coordinate code, documentation, website, and release communication
+title: "[release] "
+labels: ["type/release", "status/triage", "roadmap/public", "track/launch"]
+body:
+  - type: input
+    id: release
+    attributes: {label: Release or milestone}
+    validations: {required: true}
+  - type: textarea
+    id: audience
+    attributes: {label: Audience and value}
+    validations: {required: true}
+  - type: textarea
+    id: deliverables
+    attributes: {label: Code, docs, website, and announcement deliverables}
+    validations: {required: true}
+  - type: textarea
+    id: validation
+    attributes: {label: Validation and compatibility evidence}
+    validations: {required: true}
+  - type: textarea
+    id: measures
+    attributes: {label: Adoption measures}
+    validations: {required: true}
+  - type: textarea
+    id: rollback
+    attributes: {label: Rollback or correction plan}
+    validations: {required: true}

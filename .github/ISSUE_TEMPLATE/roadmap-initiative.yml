@@ -1,0 +1,44 @@
+name: Public roadmap initiative
+description: Propose a measurable product outcome for the public roadmap
+title: "[initiative] "
+labels: ["type/initiative", "status/triage", "roadmap/public"]
+body:
+  - type: markdown
+    attributes:
+      value: Public initiatives must not include private infrastructure, credentials, customer data, or unannounced commercial commitments.
+  - type: dropdown
+    id: horizon
+    attributes: {label: Horizon, options: [Now, Next, Later]}
+    validations: {required: true}
+  - type: dropdown
+    id: track
+    attributes: {label: Track, options: [Product, Website, Docs, Launch, Marketing, Adoption, Reliability, GitOps, Governance]}
+    validations: {required: true}
+  - type: textarea
+    id: outcome
+    attributes: {label: Outcome, description: Describe the user or community outcome, not only the implementation.}
+    validations: {required: true}
+  - type: textarea
+    id: audience
+    attributes: {label: Audience and problem}
+    validations: {required: true}
+  - type: textarea
+    id: deliverables
+    attributes: {label: Deliverables}
+    validations: {required: true}
+  - type: textarea
+    id: measures
+    attributes: {label: Success measures}
+    validations: {required: true}
+  - type: input
+    id: target_date
+    attributes: {label: Target date, placeholder: YYYY-MM-DD or Later}
+    validations: {required: true}
+  - type: textarea
+    id: dependencies
+    attributes: {label: Dependencies and risks}
+    validations: {required: true}
+  - type: textarea
+    id: acceptance
+    attributes: {label: Acceptance criteria}
+    validations: {required: true}
