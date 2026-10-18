@@ -1,0 +1,29 @@
+name: Website or content work
+description: Plan a public website, documentation, or campaign deliverable
+title: "[website] "
+labels: ["type/content", "status/triage", "roadmap/public", "track/website"]
+body:
+  - type: dropdown
+    id: locale
+    attributes: {label: Locale, options: [English, Simplified Chinese, Bilingual, Locale-neutral]}
+    validations: {required: true}
+  - type: textarea
+    id: audience
+    attributes: {label: Audience and user intent}
+    validations: {required: true}
+  - type: textarea
+    id: message
+    attributes: {label: Core message and proof points}
+    validations: {required: true}
+  - type: textarea
+    id: deliverable
+    attributes: {label: Deliverable and call to action}
+    validations: {required: true}
+  - type: textarea
+    id: measure
+    attributes: {label: Success measure}
+    validations: {required: true}
+  - type: textarea
+    id: acceptance
+    attributes: {label: Accessibility, privacy, and acceptance criteria}
+    validations: {required: true}
